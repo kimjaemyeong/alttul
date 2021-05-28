@@ -1,0 +1,28 @@
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5f5f5f;
+    border-bottom: 3px solid transparent;
+}
+
+div.scrollmenu a:hover {
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#active {
+    color: #e72244;
+    border-bottom: 3px solid red;
+}
