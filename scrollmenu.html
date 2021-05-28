@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1">
+    <title>scrollmenu</title>
+    <style>
+        /* 상단 메뉴  */
+        .id {
+            position: relative;
+            display: block;
+            float: left;
+            left: 20px;
+            top: 2px;
+            width: 25px;
+            height: 25px;
+        }
+
+        /* 폰트 */
+        .accordion {
+            background-color: #fff;
+            color: #161616;
+            cursor: rgb(22, 22, 22)r;
+            padding: 14px 12px 12px 40px;
+            width: 85%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 17px;
+            transition: 0.4s;
+            font-weight: 500;
+            margin-top: -8px;
+            font-family: 나눔스퀘어, Californian FB;
+            letter-spacing: 0px;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #fff;
+        }
+
+        /* plus icon */
+        .accordion:after {
+            content: '\276f';
+            transform: rotate(90deg);
+            color: #b8b8b8;
+            font-weight: 100;
+            float: right;
+            margin-right: -10px;
+            margin-bottom: 10px;
+        }
+
+        /* minus icon */
+        .active:after {
+            content: '\276F';
+            transform: rotate(270deg);
+            margin-left: -10px;
+            margin-bottom: 10px;
+        }
+
+        .absolute {
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        .panel {
+            padding: 0 55px;
+            background-color: #f4f4f4;
+            max-height: 0px;
+            color: #f5f5f5;
+            font-weight: medium;
+            overflow: hidden;
+            font-size: 15px;
+            transition: max-height 0.2s ease-out;
+            font-family: 나눔스퀘어, Californian FB;
+        }
+
+        /* 하단 푸터 메뉴 */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 7%;
+            background-color: #fff;
+            color: black;
+            z-index: 1;
+            border-top: 1px solid #dddddd;
+        }
+
+        .footer2 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 8px;
+            margin-left: 9%;
+            width: 100%;
+            height: 5%;
+            color: black;
+            text-align: left;
+            z-index: 2;
+        }
+
+        #active {
+            color: #e72244
+        }
+
+        .footer3 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 8px;
+            margin-left: 34%;
+            width: 100%;
+            height: 5%;
+            color: black;
+            text-align: left;
+            z-index: 3;
+        }
+
+        .footer4 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 8px;
+            margin-left: 59%;
+            width: 100%;
+            height: 5%;
+            color: black;
+            text-align: left;
+            z-index: 4;
+        }
+
+        .footer5 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 8px;
+            margin-left: 83%;
+            width: 100%;
+            height: 5%;
+            color: black;
+            text-align: left;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 메뉴 -->
+    <img src='https://ifh.cc/g/dDEo25.png' class="id">
+    <button class="accordion"> 가전/디지털</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/appliances_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/digital_appliances" target="">
+                디지털 가전 </a></p>
+        <p><a href="https://alttul.com/interiori_appliances" target="">
+                인테리어 가전 </a></p>
+        <p><a href="https://alttul.com/tool_appliances" target="">
+                전동 공구 </a></p>
+        <br>
+    </div>
+
+    <img src='https://ifh.cc/g/mEMd6u.png' class="id">
+    <button class="accordion"> 뷰티</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/beauty_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/cosmetics_beauty" target="">
+                화장품 </a></p>
+        <p><a href="https://alttul.com/skincare_beauty" target="">
+                스킨케어 </a></p>
+        <p><a href="https://alttul.com/hair_beauty" target="">
+                헤어용품 </a></p>
+        <p><a href="https://alttul.com/perfume_beauty" target="">
+                향수 </a></p>
+        <p><a href="https://alttul.com/candle_beauty" target="">
+                캔들, 방향제 </a></p>
+        <br>
+    </div>
+
+    <img src='https://ifh.cc/g/bcXlGT.png' class="id">
+    <button class="accordion"> 스포츠/레저</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/sports_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/camping_sports" target="">
+                캠핑 </a></p>
+        <p><a href="https://alttul.com/hiking_sports" target="">
+                등산용품 </a></p>
+        <p><a href="https://alttul.com/fishing_camping" target="">
+                낚시용품 </a></p>
+        <p><a href="https://alttul.com/car_sports" target="">
+                자동차용품 </a></p>
+        <p><a href="https://alttul.com/healthcare_sports" target="">
+                헬스케어 </a></p>
+        <br>
+    </div>
+
+    <img src='https://ifh.cc/g/xVuETI.png' class="id">
+    <button class="accordion"> 건강식품</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/healthfood_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/ginseng_healthfood" target="">
+                홍삼/녹용 </a></p>
+        <p><a href="https://alttul.com/diet_healthfood" target="">
+                다이어트 식품 </a></p>
+        <p><a href="https://alttul.com/tonic_healthfood" target="">
+                영양제 </a></p>
+        <br>
+    </div>
+
+    <img src='https://ifh.cc/g/Kk5MsK.png' class="id">
+    <button class="accordion"> 쥬얼리/시계</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/jewellery_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/watch_jewellery" target="">
+                시계 </a></p>
+        <p><a href="https://alttul.com/jewellery" target="">
+                쥬얼리 </a></p>
+        <br>
+    </div>
+
+    <img src='https://ifh.cc/g/cnWKHT.png' class="id">
+    <button class="accordion"> 생활용품</button>
+
+    <div class="panel" style="line-height:200%;">
+        <p class="narrowLineHeight">
+            <a href="https://alttul.com/lifestyle_all" target="">
+                <br>전체</a></p>
+        <p><a href="https://alttul.com/Kitchen_lifestyle" target="">
+                주방용품 </a></p>
+        <p><a href="https://alttul.com/furniture_lifestyle" target="">
+                가구/수납 </a></p><br>
+    </div>
+
+    <!-- 하단 푸터 메뉴 -->
+    <div class="footer">
+    </div>
+    <a class="footer2" href='http://www.alttul.com/' target=''>
+        <img src='https://ifh.cc/g/V4gUoa.png' width='40px'></a>
+    <a class="footer3" href='http://www.alttul.com/my_menu' target=''>
+        <img src='https://ifh.cc/g/BMAM3v.png' width='40px'></a>
+    <a class="footer4" href='http://www.alttul.com/search' target=''>
+        <img src='https://ifh.cc/g/XtyR25.png' width='40px'></a>
+    <a class="footer5" href='http://www.alttul.com/shop_mypage' target=''>
+        <img src='https://ifh.cc/g/hnH1T2.png' width='40px'></a>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
