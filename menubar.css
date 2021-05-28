@@ -1,3 +1,13 @@
+/* 뒤로가기 버튼 */
+.id1 {
+    background-color: #fff;
+    border: 0;
+    display: inline-block;
+    cursor: Pointer;
+    margin-top: 5px;
+    margin-right: -6px;
+}
+
 div.scrollmenu {
     background-color: #fff;
     overflow: auto;
