@@ -2,17 +2,19 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://kimjaemyeong.github.io/alttul/menubar.css"> 
+    <meta charset="UTF-8">
+    <title>top bar </title>
+    <link rel="stylesheet" href="/alttul/css/menubar.css">
+
 </head>
 
 <body>
-
-    <!-- 뒤로가기 버튼 -->
-    <button class="id1" onclick="goBack()">
-    <img src="https://ifh.cc/g/IEQ388.png" alt="left-icon_black" width="20px"></button>
-    <span style="">생활용품</span>  
-    
+    <header style="top: 50px;">
+        <a onclick="goBack()" id="autoback"></a>
+        <span id="tit">생활가전</span>
+        <a href='http://alttul.com/shop_cart' target=''>
+            <img class="cart" src='https://ifh.cc/g/wQdM5v.png' border='0'></a>
+    </header>
 
     <!-- 메뉴바 -->
     <div class="scrollmenu">
@@ -24,11 +26,7 @@
         <a href="http://www.alttul.com/food_fruit">과일</a>
     </div>
 
-    <script>
-        function goBack() {
-            window.history.back();
-        }        
-    </script>
+    <script src="https://kimjaemyeong.github.io/alttul/backbutton.js"></script>
 
 </body>
 
