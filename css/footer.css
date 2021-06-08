@@ -78,3 +78,8 @@
     text-align: left;
     z-index: 5;
 }
+@media (min-width: 760px) {
+    .footer {
+        display: none;
+    }
+}  
