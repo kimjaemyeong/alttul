@@ -1,58 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>topbar</title>
+    <link rel="stylesheet" href="/test/newfooter.css">
     <link rel="stylesheet" href="/alttul/css/topbar.css">
-    <link rel="stylesheet" href="/alttul/css/footer.css">
-    <link rel="stylesheet" href="/alttul/css/menubar.css">
 </head>
 
 <body>
-    <!-- top menu -->
-    <div>
-    <header style="top: 30px;">
-        <h1 class="logo">
-            <span class="tit">생활가전</span>
-        </h1>
-        <a onclick="goBack()" id="autoback"></a>
-        <a class="cart" href='http://www.alttul.com/shop_cart' target=''>
-            <img src='https://ifh.cc/g/8eiqYp.png' border='0' style="width: 25px;"></a>
-    </header>
+    <!-- top bar -->
+    <div class="top">
+        <div class="left">
+            <a onclick="goBack()">
+                <img src='https://ifh.cc/g/mRYGFo.png' style="width: 20px;"></a>
+        </div>
+        <div class="center">
+            <img src="https://ifh.cc/g/BOA1Ke.png" alt="#home" style="width: 90px;">
+        </div>
+        <div class="right">
+            <a href='http://www.alttul.com/shop_cart'><img src='https://ifh.cc/g/cFcR6D.png'style="width: 25px;"></a>
+        </div>
+    </div>    
+    
+    <!-- footer bar -->
+    <div id="footer">
+        <div id="home"><img src="https://ifh.cc/g/qeGR9e.png" alt="" style="width: 40px;"></div>
+        <div id="category"><img src="https://ifh.cc/g/1HCA1z.png" alt="" style="width: 40px;"></div>
+        <div id="search"><img src="https://ifh.cc/g/ynBh7P.png" alt="" style="width: 40px;"></div>
+        <div id="mypage"><img src="https://ifh.cc/g/jjQYXJ.png" alt="" style="width: 40px;"></div>
     </div>
-
-    <!-- scroll menu -->
-    <main class="scrollmenu">
-        <a id="active" href="http://www.alttul.com/food_all">전체</a>
-        <a href="http://www.alttul.com/food_millkit">밀키트/가공식품</a>
-        <a href="http://www.alttul.com/food_meat">정육</a>
-        <a href="http://www.alttul.com/food_kimchi">김치/반찬류</a>
-        <a href="http://www.alttul.com/food_fish">수산</a>
-        <a href="http://www.alttul.com/food_fruit">과일</a>
-    </main>
-
-    <!-- footer menu -->
-    <footer class="footer">
-
-    <a class="footer2" href='http://www.alttul.com/' target=''>
-        <img src='https://ifh.cc/g/V4gUoa.png' border='0' width='40px'></a>
-
-    <a class="footer3" href='http://www.alttul.com/my_menu' target=''>
-        <img src='https://ifh.cc/g/gZy3KV.png' border='0' width='40px'></a>
-
-    <a class="footer4" href='http://www.alttul.com/search' target=''>
-        <img src='https://ifh.cc/g/XtyR25.png' border='0' width='40px'></a>
-
-    <a class="footer5" href='http://www.alttul.com/shop_mypage' target=''>
-        <img src='https://ifh.cc/g/hnH1T2.png' border='0' width='40px'></a>
-
-    </footer>
-
-    <script src="https://kimjaemyeong.github.io/alttul/js/backbutton.js"></script>
-
-
-
 </body>
 
 </html>
