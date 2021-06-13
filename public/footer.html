@@ -1,30 +1,41 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" media="" href="https://kimjaemyeong.github.io/alttul/css/footer.css">
+    <link rel="stylesheet" href="https://kimjaemyeong.github.io/alttul/css/footer.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-    <div class="footer">
 
-    <a class="footer2" href='footerindex/footer2.html' target=''>
-        <img src='https://ifh.cc/g/V4gUoa.png' border='0' width='40px'></a>
-
-    <a class="footer3" href='footerindex/footer3.html' target=''>
-        <img src='https://ifh.cc/g/gZy3KV.png' border='0' width='40px'></a>
-
-    <a class="footer4" href='footerindex/footer4.html' target=''>
-        <img src='https://ifh.cc/g/XtyR25.png' border='0' width='40px'></a>
-
-    <a class="footer5" href='footerindex/footer5.html' target=''>
-        <img src='https://ifh.cc/g/hnH1T2.png' border='0' width='40px'></a>
-
+    <!-- footer bar -->
+    <div id="footer">
+        <div id="home">
+            <a href='http://www.alttul.com/'>
+                <img src='https://ifh.cc/g/AjqVWB.png' style="width: 40px;"></a></div>
+        <div id="category"><a href='http://www.alttul.com/my_menu'>
+                <img src='https://ifh.cc/g/1HCA1z.png' style="width: 40px;"></a></div>
+        <div id="search"><a href='http://www.alttul.com/search'>
+                <img src='https://ifh.cc/g/ynBh7P.png' style="width: 40px;"></a>
+        </div>
+        <div id="mypage"><a href='http://www.alttul.com/shop_mypage'>
+                <img src='https://ifh.cc/g/jjQYXJ.png' style="width: 40px;"></a>
+        </div>
     </div>
 
-    <script src="https://kimjaemyeong.github.io/alttul/js/footer.js"></script>
+    <script>
+        $(document).ready(function () {
+            let footer = document.getElementById('home');
+            let footer = document.getElementById('category');
+            let footer = document.getElementById('search');
+            let footer = document.getElementById('mypage');
 
+            if (window.location.href == 'http://wwww.alttul.com/') {
+                window.location.herf = 'http://www.naver.com/';
+            }
+        });
+    </script>
 </body>
 
 </html>
