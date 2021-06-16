@@ -1,0 +1,61 @@
+/* 상단/하단 이동 스크롤 버튼 */
+
+/* PC 배너1 스타일 */
+.floBanPc1 {
+    position: fixed;
+    top: 280px;
+    /* 윗쪽 끝에서부터의 거리 */
+    right: 0;
+    z-index: 99;
+}
+
+/* PC 배너2 스타일 */
+.floBanPc2 {
+    position: fixed;
+    top: 328px;
+    /* 윗쪽 끝에서부터의 거리 */
+    right: 0;
+    z-index: 99;
+}
+
+/* PC 배너3 스타일 */
+.floBanPc3 {
+    position: fixed;
+    top: 230px;
+    /* 윗쪽 끝에서부터의 거리 */
+    right: 0;
+    z-index: 99;
+}
+
+/* PC TOP 버튼 */
+#scrollTopPc {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    /* 윗쪽 끝에서부터의 거리 */
+    right: 30px;
+    /* 오른쪽 끝에서부터의 거리 */
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* 모바일 TOP 버튼 */
+#scrollTopMob {
+    display: none;
+    position: fixed;
+    bottom: 130px;
+    /* 아랫쪽 끝에서부터의 거리 */
+    right: 20px;
+    /* 오른쪽 끝에서부터의 거리 */
+    z-index: 99;
+}
+
+/* 모바일 카카오톡 채널 버튼 위치 */
+.kakaoChatMob {
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    /* 화면 오른쪽으로부터의 거리, 숫자만 입력 */
+    bottom: 70px;
+    /* 화면 아래쪽으로부터의 거리, 숫자만 입력 */
+}
