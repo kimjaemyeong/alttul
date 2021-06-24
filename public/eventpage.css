@@ -1,0 +1,87 @@
+/* 가입하기 버튼 */
+.button1 {
+    width: 100%;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 9%
+}
+
+.button1 {
+    animation-delay: 3s;
+    animation: 3s button1;
+}
+
+.ex1 {
+    box-shadow: 1px 1px 6px rgb(51, 47, 47);
+}
+
+@keyframes button1 {
+    from {
+        margin-bottom: -30%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+/* 하단 푸터 메뉴 */
+body {
+    margin: 0 auto;
+}
+
+.footer {
+    z-index: 300;
+    bottom: 0;
+    border-top: 1px solid #dddddd;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+@media (min-width: 760px) {
+    #footer {
+        display: none;
+    }
+}
+
+/* Fix 네비게이션 바 */
+#navbar {
+    overflow: hidden;
+    text-align: center;
+    margin-top: -70px;
+    z-index: 5;
+}
+
+#mainimg {
+    text-align: center;
+}
+
+#navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 65px;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
