@@ -1,5 +1,6 @@
 /* 가입하기 버튼 */
 .button1 {
+    z-index: 310;
     width: 100%;
     overflow: hidden;
     max-width: 500px;
