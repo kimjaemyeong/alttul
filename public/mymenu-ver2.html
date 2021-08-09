@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <style>
+        a {
+            text-decoration:none
+        }
+
         .accordion-button {
             display: flex;
             align-items: center;
@@ -17,17 +21,23 @@
 
         .accordion-body {
             background-color: #f2f2f2;
-            margin: 0px;
+            padding: 0px;
         }
 
         .accordion-text {
             padding: 10px 30px;
-            margin: 0px;
+            padding: 0px;
+        }
+
+        .accordion-text .text {
+            padding: 18px 53px;
+            color: black;
         }
 
         .accordion-text > div {
             padding: 10px 0px;
-            border-bottom: gray solid 1px;
+            border-bottom: #e4e4e4 solid 0.5px;
+            margin: 0px;
         }
 
         .icon {
@@ -35,7 +45,7 @@
             padding: 0px 8px 0px 0px;
         }
     </style>
-    <title>Hello, world!</title>
+    <title>my menu</title>
 </head>
 
 <body>
@@ -51,10 +61,10 @@
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <div class="accordion-text">
-                            <div><a href="https://alttul.com/appliances_all" target="">전체</a></div>
-                            <div><a href="https://alttul.com/digital_appliances" target="">디지털 가전 </a></div>
-                            <div><a href="https://alttul.com/interiori_appliances" target="">인테리어 가전 </a></div>
-                            <div><a href="https://alttul.com/tool_appliances" target="">전동 공구 </a></div>
+                            <div class="text"><a href="https://alttul.com/appliances_all" target="">전체</a></div>
+                            <div class="text"><a href="https://alttul.com/digital_appliances" target="">디지털 가전 </a></div>
+                            <div class="text"><a href="https://alttul.com/interiori_appliances" target="">인테리어 가전 </a></div>
+                            <div class="text"><a href="https://alttul.com/tool_appliances" target="">전동 공구 </a></div>
                     </div>
                 </div>
             </div>
