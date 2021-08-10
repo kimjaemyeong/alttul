@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://kimjaemyeong.github.io/alttul/css/footer.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://kimjaemyeong.github.io/alttul/css/footer.css"> 깃험 절대 경로 코드 수정 후 바꾸기-->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./test/del.css">
+    <script src="./test/del.js"></script>
 </head>
 
 <body>
@@ -13,29 +13,41 @@
     <div id="footer">
         <div id="home">
             <a href='http://www.alttul.com/'>
-                <img src='https://ifh.cc/g/AjqVWB.png' style="width: 42px;"></a></div>
-        <div id="category"><a href='http://www.alttul.com/my_menu'>
-                <img src='https://ifh.cc/g/1HCA1z.png' style="width: 42px;"></a></div>
-        <div id="search"><a href='http://www.alttul.com/search'>
+                <img src='https://ifh.cc/g/WZ5Nfd.png' style="width: 42px;"></a>
+        </div>
+        <div class="global-menu-btn" id="category">
+            <a href=''>
+                <img src='https://ifh.cc/g/1HCA1z.png' style="width: 42px;">
+            </a>
+                <div class="global-menu">
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p style="font-size: 100px;">1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+        </div>
+        <div id="search">
+            <a href='http://www.alttul.com/search'>
                 <img src='https://ifh.cc/g/ynBh7P.png' style="width: 42px;"></a>
         </div>
-        <div id="mypage"><a href='http://www.alttul.com/shop_mypage'>
+        <div id="mypage">
+            <a href='http://www.alttul.com/shop_mypage'>
                 <img src='https://ifh.cc/g/jjQYXJ.png' style="width: 42px;"></a>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            let footer = document.getElementById('home');
-            let footer = document.getElementById('category');
-            let footer = document.getElementById('search');
-            let footer = document.getElementById('mypage');
-
-            if (window.location.href == 'http://wwww.alttul.com/') {
-                window.location.herf = 'http://www.naver.com/';
-            }
-        });
-    </script>
 </body>
 
 </html>
