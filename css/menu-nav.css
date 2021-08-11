@@ -1,0 +1,19 @@
+html, body {
+        margin: 0;
+}
+
+.footer {
+    background-color: gray;
+    height: ;
+    bottom: 0;
+
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 20px;
+}
+
