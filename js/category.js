@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const btn = document.querySelector('.category-btn');
+    const btn = document.querySelector('.category');
 
     function onBtnClick() {
         // add: 추가
