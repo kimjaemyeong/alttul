@@ -1,0 +1,60 @@
+body, header {
+    margin: 0;
+}
+
+header {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+
+.head > .font  .img-cart {
+    display: inline;
+}
+
+.head > .img-cart {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.bi {
+    width: 30px;
+    height: 25px;
+    padding-left: 7px;
+    color: white;
+}
+
+.font {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    display: scroll;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid red;
+}
