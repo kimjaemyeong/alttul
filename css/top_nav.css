@@ -21,9 +21,10 @@ img{
     width: 25px;
 }
 
-.bi {
-    padding-left: 7px;
+.backButton {
+    padding-left: 11px;
     color: white;
+    width: 12px;
     font-size: 20px;
 }
 
