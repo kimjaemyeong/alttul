@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        ul.list {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+
+        .active {
+            color: red;
+            font-weight: bold;
+        }
+        
+        div.scrollmenu {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            background-color: red;
+            color: black;
+            display: none;
+        }
+        div.show {
+            display: block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <footer class="footer-menu">
+        <ul class="list">
+            <li class="tab-btn">홈</li>
+            <li class="tab-btn active">카테고리</li>
+            <li class="tab-btn">검색</li>
+            <li class="tab-btn">마이알뜰</li>
+        </ul>
+    </footer>
+
+    <nav>
+        <div class="scrollmenu">
+            <a href="#home">Home0</a>
+            <a href="#news">News0</a>
+            <a href="#contact">Contact0</a>
+            <a href="#about">About0</a>
+        </div>
+        <div class="scrollmenu">
+            <a href="#home">Home1</a>
+            <a href="#news">News1</a>
+            <a href="#contact">Contact1</a>
+            <a href="#about">About1</a>
+        </div>
+        <div class="scrollmenu">
+            <a href="#home">Home2</a>
+            <a href="#news">News2</a>
+            <a href="#contact">Contact2</a>
+            <a href="#about">About2</a>
+        </div>
+        <div class="scrollmenu">
+            <a href="#home">Home3>
+            <a href="#news">News3</a>
+            <a href="#contact">Contact3</a>
+            <a href="#about">About3</a>
+        </div>
+    </nav>
+
+    <script>
+        for (let i = 0; i < 4; i++) {
+            $('.tab-btn').eq(i).on('click', function () {
+                $('.tab-btn').removeClass('active');
+                $('.scrollmenu').removeClass('show');
+                $('.tab-btn').eq(i).addClass('active');
+                $('.scrollmenu').eq(i).addClass('show');
+
+                // if ($('.tab-btn').eq(0)) {
+                //     window.location.href = 'https://www.naver.com/';
+                // } else if ($('.tab-btn').eq(1)) {
+                //     location.href = 'https://getbootstrap.com/';
+                // } else if ($('.tab-btn').eq(2)) {
+                //     location.href = 'https://www.daum.net/';
+                // } else if ($('.tab-btn').eq(3)) {
+                //     location.href = 'https://www.youtube.com/';
+                // }
+            });
+        };
+
+        $('.tab-btn').click(function(){
+            
+        })
+    </script>
+</body>
+
+</html>
